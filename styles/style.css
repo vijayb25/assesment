@@ -1,8 +1,8 @@
 /* Fonts Used */
 @font-face {
     font-family: 'General Sans';
-    src: url('/fonts/GeneralSans-Light.woff2') format('woff2'),
-        url('/fonts/GeneralSans-Light.woff') format('woff');
+    src: url('fonts/GeneralSans-Light.woff2') format('woff2'),
+        url('fonts/GeneralSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'General Sans';
-    src: url('/fonts/GeneralSans-Regular.woff2') format('woff2'),
-        url('/fonts/GeneralSans-Regular.woff') format('woff');
+    src: url('fonts/GeneralSans-Regular.woff2') format('woff2'),
+        url('fonts/GeneralSans-Regular.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -19,8 +19,8 @@
 
 @font-face {
     font-family: 'General Sans';
-    src: url('/fonts/GeneralSans-Medium.woff2') format('woff2'),
-        url('/fonts/GeneralSans-Medium.woff') format('woff');
+    src: url('fonts/GeneralSans-Medium.woff2') format('woff2'),
+        url('fonts/GeneralSans-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'General Sans';
-    src: url('/fonts/GeneralSans-Semibold.woff2') format('woff2'),
-        url('/fonts/GeneralSans-Semibold.woff') format('woff');
+    src: url('fonts/GeneralSans-Semibold.woff2') format('woff2'),
+        url('fonts/GeneralSans-Semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -37,8 +37,8 @@
 
 @font-face {
     font-family: 'General Sans';
-    src: url('/fonts/GeneralSans-Bold.woff2') format('woff2'),
-        url('/fonts/GeneralSans-Bold.woff') format('woff');
+    src: url('fonts/GeneralSans-Bold.woff2') format('woff2'),
+        url('fonts/GeneralSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -46,8 +46,8 @@
 
 @font-face {
     font-family: 'Gotcha';
-    src: url('/fonts/GotchaRegular.woff2') format('woff2'),
-        url('/fonts/GotchaRegular.woff') format('woff');
+    src: url('fonts/GotchaRegular.woff2') format('woff2'),
+        url('fonts/GotchaRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -55,8 +55,8 @@
 
 @font-face {
     font-family: 'General Sans';
-    src: url('/fonts/GeneralSans-Extralight.woff2') format('woff2'),
-        url('/fonts/GeneralSans-Extralight.woff') format('woff');
+    src: url('fonts/GeneralSans-Extralight.woff2') format('woff2'),
+        url('fonts/GeneralSans-Extralight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -64,8 +64,8 @@
 
 @font-face {
     font-family: 'Geist Mono';
-    src: url('/fonts/GeistMono-SemiBold.woff2') format('woff2'),
-        url('/fonts/GeistMono-SemiBold.woff') format('woff');
+    src: url('fonts/GeistMono-SemiBold.woff2') format('woff2'),
+        url('fonts/GeistMono-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -73,8 +73,8 @@
 
 @font-face {
     font-family: 'GT America Lt';
-    src: url('/fonts/GTAmerica-Lt.woff2') format('woff2'),
-        url('/fonts/GTAmerica-Lt.woff') format('woff');
+    src: url('fonts/GTAmerica-Lt.woff2') format('woff2'),
+        url('fonts/GTAmerica-Lt.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -200,7 +200,7 @@ body{
 }
 
 .modal_search_button{
-    background: url(/images/MagnifyingGlass.png) no-repeat center;
+    background: url(images/MagnifyingGlass.png) no-repeat center;
     position: absolute;
     top: 50%;
     right: 10px;
@@ -361,7 +361,7 @@ nav ul li.active > a{
     }
 }
 .dropdown-link::before{
-    content: url(/images/ArrowUpRight.png);
+    content: url(images/ArrowUpRight.png);
     position: absolute;
     top: 0;
     right: 0;
@@ -459,7 +459,7 @@ nav ul li.active > a{
     gap: 5px;
 }
 .searchBox button{
-    background: url(/images/MagnifyingGlass.png); 
+    background: url(images/MagnifyingGlass.png); 
     width: 24px; 
     aspect-ratio: 1/1; 
     border: none;
@@ -653,7 +653,7 @@ main a::before{
     content: "";
     width: 24px;
     aspect-ratio: 1/1;
-    background: url(/images/ArrowUpRight.png);
+    background: url(images/ArrowUpRight.png);
     position: absolute;
     top: 0;
     right: -30px;
@@ -884,7 +884,7 @@ main a:hover{color: #025e5f;}
     content: "";
     width: 24px;
     aspect-ratio: 1/1;
-    background: url(/images/ArrowUpRight.png);
+    background: url(images/ArrowUpRight.png);
     position: absolute;
     top: 0;
     right: 0;
@@ -1028,7 +1028,7 @@ main a:hover{color: #025e5f;}
     content: "";
     width: 22px;
     aspect-ratio: 1/1;
-    background: url(/images/ArrowUpRight.png);
+    background: url(images/ArrowUpRight.png);
     position: absolute;
     top: 2px;
     right: 0;
@@ -1206,11 +1206,11 @@ footer{
     left: 0;
 }
 .contact_holder ul li:first-child::before{
-    content:url(/images/contact-icon.png);
+    content:url(images/contact-icon.png);
 
 }
 .contact_holder ul li:last-child::before{
-    content: url(/images/Mail.png);
+    content: url(images/Mail.png);
 }
 .contact_holder ul li a{
     text-decoration: none; 
