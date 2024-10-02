@@ -214,6 +214,7 @@ body{
     top: 30px;
     right: 30px;
     font-weight: 300;
+    cursor: pointer;
 }
 
 .close:hover,
