@@ -100,7 +100,7 @@
     --bodyLineHeight: 26px;
 }
 
-html{font-size: 16px !important;}
+body,html{font-size: 16px !important; overflow-x: hidden;}
 
 *, *:before, *:after { box-sizing: border-box; -moz-box-sizing: border-box; image-rendering: -webkit-optimize-contrast;}
 
