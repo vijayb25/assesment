@@ -100,6 +100,7 @@
     --bodyLineHeight: 26px;
 }
 
+html{font-size: 16px !important;}
 
 *, *:before, *:after { box-sizing: border-box; -moz-box-sizing: border-box; image-rendering: -webkit-optimize-contrast;}
 
@@ -134,6 +135,7 @@ body{
     width: 100%;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 /* Modal */
@@ -144,6 +146,7 @@ body{
     position: fixed; 
     z-index: 1;
     left: 0;
+    right: 0;
     top: 0;
     width: 100%; 
     height: 100%;
@@ -169,6 +172,7 @@ body{
     color: #000;
     font-weight: 700;
     line-height: 45px;
+    text-align: center;
 }
 
 .modal-content form{
@@ -237,6 +241,8 @@ header{
     min-height: 80px;
 }
 
+.main_logo_mobile{display: none;}
+
 .header_flex{
     display: flex;
     justify-content: space-between;
@@ -245,6 +251,49 @@ header{
     border-radius: 40px;
     padding: 10px 21px;
     z-index: 2;
+}
+
+.burgerOpen{
+    background: none !important;
+    width: 35px !important;
+    padding: 0 !important;
+    display: none;
+}
+
+.burger-lines{
+    display: flex;
+
+    flex-direction: column;
+    gap: 6px;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.burgerOpen span{
+    background: var(--textColor);
+    height: 2px;
+    display: block;
+}
+
+.burgerOpen span:first-child{
+    width: 35px;
+
+}
+
+.burgerOpen span:nth-child(2){
+    width: 30px;
+}
+
+.burgerOpen span:last-child{
+    width: 35px;
+}
+
+.close-nav{
+    display: none;
+}
+
+#navMenu {
+    display: block;
 }
 
 nav{}
@@ -424,6 +473,10 @@ nav ul li.active > a{
 .inquiryBtn{
 }
 .inquiryBtn a{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
     display: block; 
     width: 165px; 
     color: var(--white);
@@ -456,6 +509,7 @@ nav ul li.active > a{
     display: flex;
     justify-content: space-between;
     align-items: start;
+    gap: 10px;
 }
 
 .bnr_content{
@@ -517,13 +571,18 @@ nav ul li.active > a{
 .bnr_content_btn a:hover{}
 
 .banner_flex figure{
-    width: 604px;
-    height: 604px;
     margin-right: 30px;
-}
+    flex-shrink: 0;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}   
 
 .banner_flex figure img{
-    width: 100%;
+    width: 604px;
+    display: block;
+    height: auto;
 }
 
 /* End Banner */
@@ -541,15 +600,18 @@ nav ul li.active > a{
 
 .main_flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 15px;
 }
 .main_flex figure{
-    width: 648px;
-    height: 486px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .main_flex figure img{
-    width: 100%;
+    width: 648px;
+    display: block;
 }
 main{
     max-width: 575px;
@@ -613,7 +675,7 @@ main a:hover{color: #025e5f;}
 }
 
 .btm1_heading{
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 100%;
     color: var(--tertiaryColor);
     font-weight: 600;
@@ -624,6 +686,7 @@ main a:hover{color: #025e5f;}
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 .btm1_flex figure{
     width: 760px;
@@ -718,8 +781,16 @@ main a:hover{color: #025e5f;}
 .btm2_content ul li{}
 .btm2_content ul li a{display: block;width: 262px;text-decoration: none;padding: 12px 20px;color: var(--tertiaryColor);font-weight: 300;border-radius: 40px;}
 .btm2_content ul li a:hover{background: var(--fourthColor);-webkit-text-stroke: .2px var(--tertiaryColor);}
-.btm2_flex figure{width: 917px;height: 773px;position: absolute;right: -15px;bottom: 100px;}
-.btm2_flex figure img{width: 100%;}
+.btm2_flex figure{
+    width: auto;
+    position: absolute;
+    right: -15px;
+    bottom: 100px;
+}
+.btm2_flex figure img{
+    width: 917px;
+    height: 100%;
+}
 
 #bottom3{
     padding: 0 15px;
@@ -845,7 +916,7 @@ main a:hover{color: #025e5f;}
 
 .btm4_con{
     min-height: 876px;
-    padding: 75px 0 10px;
+    padding: 75px 0 30px;
 }
 
 .btm4_flex{ 
@@ -915,8 +986,8 @@ main a:hover{color: #025e5f;}
     font-size: 1rem;
 }
 
-.btm4_image{width: 638px; height: 640px;position: relative;right: -30px;}
-.btm4_image img{width: 100%;}
+.btm4_image{position: relative;right: -30px; width: auto;}
+.btm4_image img{width: 638px; height: 100%; display: block;}
 
 #bottom5{
     padding: 0 15px;
@@ -1012,8 +1083,8 @@ main a:hover{color: #025e5f;}
     width: 97%;
 }
 
-.btm5_boxes section figure{max-width: 424px; height: 213px;}
-.btm5_boxes section figure img{width: 100%; border-radius: 15px;}
+.btm5_boxes section figure{max-width: 424px;}
+.btm5_boxes section figure img{width: 100%; border-radius: 15px; display: block;}
 
 #bottom6{
     padding: 0 15px;
@@ -1027,11 +1098,11 @@ main a:hover{color: #025e5f;}
 
 .btm6_flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 15px;
 }
-.btm6_flex figure{width: 604px; height: 604px;}
-.btm6_flex figure img{width: 100%;}
+.btm6_flex figure{width: auto; position: absolute; bottom: 0; left: 0;}
+.btm6_flex figure img{width: 604px; display: block; height: auto;}
 
 .btm6_info{
     max-width: 499px; 
@@ -1271,7 +1342,7 @@ footer{
     gap: 10px;
 }
 .flags{
-    
+    flex-shrink: 0;
 }
 
 .flags figure{}
